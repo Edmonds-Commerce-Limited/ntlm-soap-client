@@ -1,0 +1,17 @@
+{
+    "name": "edmondscommerce/ntlm-soap-client",
+    "description": "A simple SOAP client that supports NTLM authentication for WSDL to PHP",
+    "license" : "MIT",
+    "require": {
+        "php": ">=7.4",
+        "ext-dom": "*",
+        "ext-mbstring": "*",
+        "ext-soap": "*",
+        "wsdltophp/packagebase": "~5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "EdmondsCommerce\\NtlmSoapClient\\": "./src"
+        }
+    }
+}
