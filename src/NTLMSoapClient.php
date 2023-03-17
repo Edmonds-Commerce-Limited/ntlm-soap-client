@@ -20,7 +20,7 @@ class NTLMSoapClient extends \SoapClient {
         $this->password = $password;
     }
 
-    function __doRequest($request, $location, $action, $version, $one_way = NULL) {
+    function __doRequest($request, $location, $action, $version, $one_way = NULL): ?string {
 
         $headers = array(
             'Method: POST',
@@ -44,7 +44,7 @@ class NTLMSoapClient extends \SoapClient {
         return $response;
     }
 
-    function __getLastRequestHeaders() {
+    function __getLastRequestHeaders(): ?string {
         return implode("\n", $this->__last_request_headers)."\n";
     }
 }
