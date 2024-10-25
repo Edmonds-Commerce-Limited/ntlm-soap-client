@@ -10,6 +10,8 @@ class NTLMSoapClient extends \SoapClient {
 
     private $password;
 
+    private array $__last_request_headers;
+
     public function setUser(string $user): void
     {
         $this->user = $user;
